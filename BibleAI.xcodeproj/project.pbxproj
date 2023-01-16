@@ -14,6 +14,7 @@
 		4C415C6429733219004CE044 /* BibleAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C415C6329733219004CE044 /* BibleAITests.swift */; };
 		4C415C6E2973321A004CE044 /* BibleAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C415C6D2973321A004CE044 /* BibleAIUITests.swift */; };
 		4C415C702973321A004CE044 /* BibleAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C415C6F2973321A004CE044 /* BibleAIUITestsLaunchTests.swift */; };
+		4C415C7E29733252004CE044 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4C415C7D29733252004CE044 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C415C7E29733252004CE044 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = BibleAI;
+			packageProductDependencies = (
+				4C415C7D29733252004CE044 /* OpenAISwift */,
+			);
 			productName = BibleAI;
 			productReference = 4C415C4F29733218004CE044 /* BibleAI.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 4C415C4629733218004CE044;
+			packageReferences = (
+				4C415C7C29733252004CE044 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 4C415C5029733218004CE044 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -577,6 +585,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C415C7C29733252004CE044 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C415C7D29733252004CE044 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C415C7C29733252004CE044 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C415C4729733218004CE044 /* Project object */;
 }
